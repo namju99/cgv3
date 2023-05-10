@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" type="image⁄x-icon" href="./cgv_image/logo.jpg">
+    <title>영화 그 이상의 감동.cgv</title>
      
     <script src="./script/jquery-3.6.1.js"></script>
     <script src="./script/jquery-ui.js"></script>
@@ -29,29 +30,88 @@
 
         .login a:nth-child(1){ margin-left: 30px;}
 
-        .menu{ display: flex; }
+        .menu{ display: flex;  }
 
 
-        .gnb{ display:flex; padding-left: 100px; gap:50px; height: 50px; width:100%; background-color:white; flex-wrap: wrap;
-          border-bottom: 1px solid red; border-top: 1px solid lightgray;
+        .gnb{  display:flex; padding-left: 100px;  height: 50px; width:100%; background-color:white; flex-wrap: wrap;
+           border-top: 1px solid lightgray;  
+           border-bottom: 2px solid red; 
+          
          }
-        .gnb>li{ list-style: none; width: 60px;  padding-top: 13px;
+        .gnb>li{ list-style: none; width: 80px; height:37px;  padding-top: 13px; display:inline-block;
+
+            
         }
 
-        .gnb>li>a{ 
+        .gnb>li>a{   padding-bottom:18px; display:block;
+            
+             
             font-weight: bold;  text-decoration: none; color: black;  }
 
-        .sub-wrap{ position:absolute; display:none;
-             width:100%;
-        height:300px; background-color:white;}
+        
 
-        .submenu{ position:absolute; width: 900px; 
-            height:280px; background-color:rgb(143, 45, 45); display:flex; gap: 80px; 
+        .submenu{  position:absolute;  
+             
+            width: 1800px;  left:0;
             
-            margin-left: 100px; margin-top: 10px;
+            height: 320px; display:none;
+             
+            
+            background-color:white; 
     }
-        .submenu li{ display:block; 
-            width: 80px;}
+
+     .submenu li{ margin-top: 10px; padding-right: 50px; font-size: 14px;
+        font-weight: bold; margin-left: 20px; 
+        
+    }
+
+    .submenu li:hover{
+        text-decoration: underline;
+    }
+
+    .subwrap p{ color: black;}
+
+    .subwrap li a{ color: gray;}
+
+    .subwrap>li:nth-child(1){ font-weight: bolder; font-size: 15px;
+     }
+
+    .sub-wrap1{ background-color: white; width: 150px; height:270px;
+        left: 100px; position: absolute; z-index: 1; 
+        margin-top:20px; 
+           
+    }
+  
+    .sub-wrap2{ background-color: white; width:150px; height:270px;
+        border-left: 1px solid rgba(211, 211, 211, 0.685);
+        margin-top:20px; 
+         
+    left: 250px; position:absolute; z-index: 1; border-right: 1px solid black;  }
+
+    .sub-wrap3{ background-color: white; width:150px; height:270px;
+    left: 400px; position:absolute; z-index: 1; 
+    border-left: 1px solid rgba(211, 211, 211, 0.685); margin-top:20px; 
+      }
+
+      .subwrap a{ width: 150px;  display: block; }
+
+    .sub-wrap4{ background-color: white; width:150px; height:270px;
+    left: 550px; position:absolute; z-index: 1; 
+    border-left: 1px solid rgba(211, 211, 211, 0.685);  margin-top:20px; 
+      }
+
+    .sub-wrap5{ background-color: white; width:150px; height:270px;
+    left: 700px; position:absolute; z-index: 1;  
+    border-left: 1px solid rgba(211, 211, 211, 0.685);  margin-top:20px; 
+     }
+
+    .sub-wrap6{ background-color: white; width:150px; height:270px;
+    left: 850px; position:absolute; z-index: 1; 
+    border-left: 1px solid rgba(211, 211, 211, 0.685);   margin-top:20px;  }
+    
+
+        
+    
 
         .submenu>li:nth-child(1)>a{ font-weight: bold;}
 
@@ -59,12 +119,9 @@
             color:red;
         }
 
-        .gnb>li:hover .submenu{
-            height:300px;
-        }
-
+        
         .search{ display:flex; gap: 5px; align-items: center;  width: 100px; padding-left: 800px;
-         position: absolute;}
+         position: absolute; z-index: 2;}
 
         .search i{ font-size: 25px; 
             margin-top: 12px;
@@ -79,7 +136,7 @@
         .main-section{ 
             z-index: 0;
             width: 100%; height: 500px; background-color:beige; 
-            border-top: 1px solid red;
+             
         }
         
         
@@ -103,18 +160,9 @@
         display:flex;  gap: 35px; flex-wrap:nowrap; padding-left:20px;
            margin-top: 90px; transition: 0.3s;}
 
-           #button4{   
-            transform: translate( 1090px, -260px);
-            opacity: 0.8; cursor: pointer;
-            
-            box-shadow: 5px 5px 5px rgba(61, 57, 57, 0.397);
-            width: 40px; height:40px; border-radius: 20px;
-             display:inline-block; background-color: white; background-image: url(./cgv_image/arrow.png);
-            background-repeat: no-repeat; border:0px;
-            background-position: center center;
-            background-size: 10px; }
+           
 
-        .movie-chart{ display:flex; padding-top: 40px; gap: 10px; margin-left: -30px;}
+        .movie-chart{ display:flex; padding-top: 40px; gap: 10px; margin-left: 0px;}
         .movie-chart2 a{ color:rgb(105, 99, 99); font-weight: normal ;
          }
         .movie-chart1 a{color: black;}
@@ -145,7 +193,21 @@
         transform: translate(2px, 5px);}
 
         
+        #book{ position:relative; display: none; }
 
+        #book .detail{ position: absolute;
+            width: 115px; height: 35px; font-size: 12px; text-align:center; font-weight: bold;
+            background-color: white; color: rgb(126, 116, 116);
+        border-radius: 5px; margin-left: 30px; margin-top:120px;
+        }
+        #book span{ display: inline-block;
+              margin-top: 8px;}
+
+        #book .booking{ position:absolute;
+            width: 115px; height: 35px; font-size: 12px; text-align:center; font-weight: bold;
+            background-color: rgb(215, 67, 87); color: white;
+        border-radius: 5px; margin-left:30px; margin-top:80px;
+        }
         
 
         .box01{ 
@@ -239,23 +301,44 @@
         rgba(5, 5, 5, 0.711) 90%),url(./cgv_image/movie15.jpg);
         background-size: cover;}
 
+        .box:hover #book{ display: block; }
+
+        .background{ width: 170px; height:240px; border: 0px solid black; background-color: rgba(0, 0, 0, 0.454);
+        border-radius: 10px; position:absolute; display:none; }
+
+        .box:hover .background{ display: block; }
+
+         
+        .box:hover h1{ display:none; }
+
+        .box:hover img{ display:none;  }
+
+        #book .detail:hover {
+            background-color: rgba(255, 255, 255, 0.778);
+            color: rgba(99, 92, 92, 0.825);
+        }
+
+        #book .booking:hover {
+            background-color: rgba(215, 67, 87, 0.799);
+            color:rgba(255, 255, 255, 0.785);
+        }
+
         
 
 
 
 
 
-
         
 
 
-        .box{ z-index: 0;}
+        .box{ z-index: 0; position:relative; }
 
         .box h1{ color:white; font-size: 50px; 
         font-family:'Times New Roman', Times, serif;
-        padding-top:60px;}
+        padding-top:190px;}
 
-        .box img{ display:block; margin: 2px 0 100px 140px; width:26px; height:26px; }
+        .box img{ display:block; margin: 2px 0 100px 140px; width:26px; height:26px; position: absolute;}
         
 
         .last{ width: 100%; height:800px; background-color: white;}
@@ -280,7 +363,7 @@
             background-position: center center;
             width: 30px; height:30px; border: 1px solid lightgray; border-radius: 20px;}
 
-        .event{ position:relative; background-color: white; height: 310px; 
+        .event{ position:relative; background-color: white; height: 380px; 
         width: 1110px; overflow: hidden;}
 
         .event-wrapper:nth-child(4){
@@ -289,10 +372,10 @@
         
 
 
-        #button3{              
+        #button3{        display: none;       
             position:absolute; 
-             transform: translate(40px, 110px);
-            opacity: 0; cursor: pointer;
+             transform: translate(80px, 70px);
+             cursor: pointer;
             margin-top: 80px; z-index: 1;
             box-shadow: 5px 5px 5px rgba(61, 57, 57, 0.397);
             width: 40px; height:40px; border-radius: 20px;
@@ -301,27 +384,43 @@
             background-position: center center;
             background-size: 10px; }
         
-        #button2{  
-            transform: translate( 1090px, -170px);
-            opacity: 0.8; cursor: pointer;
+        #button2{  display:inline-block; position:absolute;
+            transform: translate( 1090px, -235px);
+             cursor: pointer;
              z-index: 1;
             box-shadow: 5px 5px 5px rgba(61, 57, 57, 0.397);
             width: 40px; height:40px; border-radius: 20px;
-             display:inline-block; background-color: white; background-image: url(./cgv_image/arrow.png);
+              background-color: white; background-image: url(./cgv_image/arrow.png);
             background-repeat: no-repeat; border:0px;
             background-position: center center;
             background-size: 10px; }
 
-            #button5{  
+            #button5{  position:absolute;
             transform: translate( 0px, 190px);
-            opacity: 0; cursor: pointer;
+            display: none; cursor: pointer;
              z-index: 1;
             box-shadow: 5px 5px 5px rgba(61, 57, 57, 0.397);
             width: 40px; height:40px; border-radius: 20px;
-             display:inline-block; background-color: white; background-image: url(./cgv_image/arrow.png);
+            background-color: white; background-image: url(./cgv_image/arrow.png);
             background-repeat: no-repeat; border:0px;
             background-position: center center;
             background-size: 10px; }
+
+
+            #button4{    display:inline-block;
+                position:absolute;
+            transform: translate( 1090px, -260px);
+             cursor: pointer;
+            
+            box-shadow: 5px 5px 5px rgba(61, 57, 57, 0.397);
+            width: 40px; height:40px; border-radius: 20px;
+             background-color: white; background-image: url(./cgv_image/arrow.png);
+            background-repeat: no-repeat; border:0px;
+            background-position: center center;
+            background-size: 10px; }
+
+
+
 
         .ebox img,
         .ebox { width: 320px; height:200px;  
@@ -466,6 +565,10 @@
 
 
 
+            .address-detail li{
+                padding-bottom: 0.5em;
+            }
+
 
 
 
@@ -501,30 +604,99 @@
         <nav>
             <div class="menu">
                 <ul class="gnb">
-                    <li><a href="#">영화</a>
-                       
-                    
+                    <li><a href="#">영화</a> 
+                         
+                            <ul class="submenu">
+                                    <div class="subwrap sub-wrap1">
+                                    <li><a href="#"><p>영화</p></a></li>
+                                    <li><a href="#">무비차트</a></li>
+                                    <li><a href="#">아트하우스</a></li>
+                                    <li><a href="#">ICECON</a></li>
+                                    </div>
+                                    
+                                 
+                                </ul> 
+                             
+                                                          
                     </li>
                     
         
                     <li><a href="#">극장</a>
-                        
+                        <ul class="submenu" >
+                            <div class="subwrap sub-wrap2">
+                            <li><a href="#"><p>극장</p></a></li>
+                            <li><a href="#">CGV극장</a></li>
+                            <li><a href="#">특별관</a></li>
+                             
+                            
+                            </div>
+                                                      
+                        </ul>  
                     
                     </li>
                          
                     <li><a href="#">예매</a>
-                       
+                        <ul class="submenu">
+                            <div class="subwrap sub-wrap3">
+                           <li><a href="#"><p>예매</p></a></li>
+                          <li><a href="#">빠른예매</a></li>
+                           <li><a href="#">상영스케줄</a></li>
+                            <li><a href="#">English Ticketing</a></li>
+                            <li><a href="#">English Schedule</a></li>
+                           
+                            </div>
+                           
+                        </ul>  
                         
                     </li>
                     <li><a href="#">스토어</a>
-                        
+                        <ul class="submenu">
+                            <div class="subwrap sub-wrap4">
+                                <li><a href="#"><p>스토어</p></a></li>
+                                <li><a href="#">영화관람권</a></li>
+                                <li><a href="#">기프트카드</a></li>
+                                <li><a href="#">콤보</a></li>
+                                <li><a href="#">팝콘</a></li>
+                                <li><a href="#">음료</a></li>
+                                <li><a href="#">스낵</a></li>
+                                <li><a href="#">플레이존</a></li>
+                                <li><a href="#">씨네샵</a></li>
+                            
+                            </div>
+                           
+                        </ul>  
                          
                     </li>
                     <li><a href="#">이벤트</a>
-                        
+                        <ul class="submenu">
+                            <div class="subwrap sub-wrap5">
+                                <li><a href="#"><p>이벤트</p></a></li>
+                                <li><a href="#">SPECIAL</a></li>
+                                <li><a href="#">영화/예매</a></li>
+                                <li><a href="#">멤버십/CLUB</a></li>
+                                <li><a href="#">CGV극장별</a></li>
+                                <li><a href="#">제휴할인</a></li>
+                                <li><a href="#">당첨자 발표</a></li>
+                                <li><a href="#">종료된 이벤트</a></li>
+                            </div>
+
+                           
+                            
+                        </ul>  
                          
                     </li>
                     <li><a href="#">혜택</a>
+                        <ul class="submenu">
+                            <div class="subwrap sub-wrap6">
+                                <li><a href="#"><p>혜택</p></a></li>
+                                <li><a href="#">CGV 할인정보</a></li>
+                                <li><a href="#">CLUB 서비스</a></li>
+                                <li><a href="#">VIP 라운지</a></li>
+                           
+                            </div>
+                           
+                        </ul>  
+                        
                         
                          
                     </li>
@@ -532,6 +704,8 @@
                     
         
                 </ul>
+
+                
                 
                 <div class="search">
                     <p>|</p>
@@ -544,53 +718,7 @@
                 
                 
             </div>
-            <div class="sub-wrap">
-                <div class="submenu">
-                    <ul>
-                        <li><a href="#">menu1</a></li>
-                        <li><a href="#">menu1</a></li>
-                        <li><a href="#">menu1</a></li>
-                        <li><a href="#">menu1</a></li>
-                        
-                    </ul>
-                    <ul>
-                        <li><a href="#">menu1</a></li>
-                        <li><a href="#">menu1</a></li>
-                        <li><a href="#">menu1</a></li>
-                        <li><a href="#">menu1</a></li>
-                        
-                    </ul>
-                    <ul>
-                        <li><a href="#">menu1</a></li>
-                        <li><a href="#">menu1</a></li>
-                        <li><a href="#">menu1</a></li>
-                        <li><a href="#">menu1</a></li>
-                        
-                    </ul>
-                    <ul>
-                        <li><a href="#">menu1</a></li>
-                        <li><a href="#">menu1</a></li>
-                        <li><a href="#">menu1</a></li>
-                        <li><a href="#">menu1</a></li>
-                        
-                    </ul>
-                    <ul>
-                        <li><a href="#">menu1</a></li>
-                        <li><a href="#">menu1</a></li>
-                        <li><a href="#">menu1</a></li>
-                        <li><a href="#">menu1</a></li>
-                        
-                    </ul>
-                    <ul>
-                        <li><a href="#">menu1</a></li>
-                        <li><a href="#">menu1</a></li>
-                        <li><a href="#">menu1</a></li>
-                        <li><a href="#">menu1</a></li>
-                        
-                    </ul>
-                    
-                </div>
-            </div>
+            
             
 
             <div class="search"></div>
@@ -625,18 +753,38 @@
                 <div class="chart-box">
                     <div class="box-wrapper">
                     <div class="box box01">
+                    <div class="background"></div>
                         <img src="./cgv_image/12.png" alt="">
+                        <div id="book">
+                            <a href="#">
+                                <div class="detail">
+                                    <span>상세보기</span> </div>
+                            </a>
+                            <a href="#">
+                                <div class="booking"> <span>예매하기</span> </div>
+                            </a>
+                        </div>
                         <h1>1</h1>
                          
                     </div>
                     <h3>아바타-물의 길</h3>
                     <h5><img src="./cgv_image/egg1.png" alt="">
                         95% &nbsp;&nbsp; 예매율90%</h5>
-                </div>
+                    </div>
 
                 <div class="box-wrapper">
                     <div class="box box02">
+                        <div class="background"></div>
                         <img src="./cgv_image/12.png" alt="">
+                        <div id="book">
+                            <a href="#">
+                                <div class="detail">
+                                    <span>상세보기</span> </div>
+                            </a>
+                            <a href="#">
+                                <div class="booking"> <span>예매하기</span> </div>
+                            </a>
+                        </div>
                         <h1>2</h1>
                     </div>
                     <h3>더 퍼스트 슬램덩크</h3>
@@ -646,7 +794,17 @@
 
                 <div class="box-wrapper">
                     <div class="box box03">
+                        <div class="background"></div>
                         <img src="./cgv_image/12.png" alt="">
+                        <div id="book">
+                            <a href="#">
+                                <div class="detail">
+                                    <span>상세보기</span> </div>
+                            </a>
+                            <a href="#">
+                                <div class="booking"> <span>예매하기</span> </div>
+                            </a>
+                        </div>
                         <h1>3</h1>
                     </div>
                     <h3>영웅</h3>
@@ -656,7 +814,17 @@
 
                 <div class="box-wrapper">
                     <div class="box box04">
+                        <div class="background"></div>
                         <img src="./cgv_image/12.png" alt="">
+                        <div id="book">
+                            <a href="#">
+                                <div class="detail">
+                                    <span>상세보기</span> </div>
+                            </a>
+                            <a href="#">
+                                <div class="booking"> <span>예매하기</span> </div>
+                            </a>
+                        </div>
                         <h1>4</h1>
                     </div>
                     <h3>장화신은 고양이</h3>
@@ -666,7 +834,17 @@
 
                 <div class="box-wrapper">
                     <div class="box box05">
+                        <div class="background"></div>
                         <img src="./cgv_image/12.png" alt="">
+                        <div id="book">
+                            <a href="#">
+                                <div class="detail">
+                                    <span>상세보기</span> </div>
+                            </a>
+                            <a href="#">
+                                <div class="booking"> <span>예매하기</span> </div>
+                            </a>
+                        </div>
                         <h1>5</h1>
                     </div>
                     <h3>교섭</h3>
@@ -676,7 +854,17 @@
 
                 <div class="box-wrapper">
                     <div class="box box06">
-                        <img src="./cgv_image/12.png" alt="">                      
+                        <div class="background"></div>
+                        <img src="./cgv_image/12.png" alt="">     
+                        <div id="book">
+                            <a href="#">
+                                <div class="detail">
+                                    <span>상세보기</span> </div>
+                            </a>
+                            <a href="#">
+                                <div class="booking"> <span>예매하기</span> </div>
+                            </a>
+                        </div>               
                         <h1>6</h1>
                     </div>
                     <h3>웃는남자</h3>
@@ -686,7 +874,17 @@
                      
                 <div class="box-wrapper">
                     <div class="box box07">
+                        <div class="background"></div>
                         <img src="./cgv_image/12.png" alt="">
+                        <div id="book">
+                            <a href="#">
+                                <div class="detail">
+                                    <span>상세보기</span> </div>
+                            </a>
+                            <a href="#">
+                                <div class="booking"> <span>예매하기</span> </div>
+                            </a>
+                        </div>
                         <h1>7</h1>
                     </div>
                     <h3>몬스터 신부</h3>
@@ -696,7 +894,17 @@
 
                 <div class="box-wrapper">
                     <div class="box box08">
+                        <div class="background"></div>
                         <img src="./cgv_image/12.png" alt="">
+                        <div id="book">
+                            <a href="#">
+                                <div class="detail">
+                                    <span>상세보기</span> </div>
+                            </a>
+                            <a href="#">
+                                <div class="booking"> <span>예매하기</span> </div>
+                            </a>
+                        </div>
                         <h1>8</h1>
                     </div>
                     <h3>빈센트 반 고흐</h3>
@@ -706,7 +914,17 @@
 
                 <div class="box-wrapper">
                     <div class="box box09">
+                        <div class="background"></div>
                         <img src="./cgv_image/12.png" alt="">
+                        <div id="book">
+                            <a href="#">
+                                <div class="detail">
+                                    <span>상세보기</span> </div>
+                            </a>
+                            <a href="#">
+                                <div class="booking"> <span>예매하기</span> </div>
+                            </a>
+                        </div>
                         <h1>9</h1>
                     </div>
                     <h3>올빼미</h3>
@@ -716,7 +934,17 @@
 
                 <div class="box-wrapper">
                     <div class="box box10">
+                        <div class="background"></div>
                         <img src="./cgv_image/12.png" alt="">
+                        <div id="book">
+                            <a href="#">
+                                <div class="detail">
+                                    <span>상세보기</span> </div>
+                            </a>
+                            <a href="#">
+                                <div class="booking"> <span>예매하기</span> </div>
+                            </a>
+                        </div>
                         <h1>10</h1>
                     </div>
                     <h3>300년의 기다림</h3>
@@ -726,7 +954,17 @@
 
                 <div class="box-wrapper">
                     <div class="box box11">
-                        <img src="./cgv_image/12.png" alt="">                      
+                        <div class="background"></div>
+                        <img src="./cgv_image/12.png" alt="">      
+                        <div id="book">
+                            <a href="#">
+                                <div class="detail">
+                                    <span>상세보기</span> </div>
+                            </a>
+                            <a href="#">
+                                <div class="booking"> <span>예매하기</span> </div>
+                            </a>
+                        </div>         
                         <h1>11</h1>
                     </div>
                     <h3>프린스챠밍</h3>
@@ -736,7 +974,17 @@
                      
                 <div class="box-wrapper">
                     <div class="box box12">
+                        <div class="background"></div>
                         <img src="./cgv_image/12.png" alt="">
+                        <div id="book">
+                            <a href="#">
+                                <div class="detail">
+                                    <span>상세보기</span> </div>
+                            </a>
+                            <a href="#">
+                                <div class="booking"> <span>예매하기</span> </div>
+                            </a>
+                        </div>
                         <h1>12</h1>
                     </div>
                     <h3>시데레우스</h3>
@@ -746,7 +994,17 @@
 
                 <div class="box-wrapper">
                     <div class="box box13">
+                        <div class="background"></div>
                         <img src="./cgv_image/12.png" alt="">
+                        <div id="book">
+                            <a href="#">
+                                <div class="detail">
+                                    <span>상세보기</span> </div>
+                            </a>
+                            <a href="#">
+                                <div class="booking"> <span>예매하기</span> </div>
+                            </a>
+                        </div>
                         <h1>13</h1>
                     </div>
                     <h3>HOPE</h3>
@@ -756,7 +1014,17 @@
 
                 <div class="box-wrapper">
                     <div class="box box14">
+                        <div class="background"></div>
                         <img src="./cgv_image/12.png" alt="">
+                        <div id="book">
+                            <a href="#">
+                                <div class="detail">
+                                    <span>상세보기</span> </div>
+                            </a>
+                            <a href="#">
+                                <div class="booking"> <span>예매하기</span> </div>
+                            </a>
+                        </div>
                         <h1>14</h1>
                     </div>
                     <h3>메간</h3>
@@ -766,7 +1034,17 @@
 
                 <div class="box-wrapper">
                     <div class="box box15">
+                        <div class="background"></div>
                         <img src="./cgv_image/12.png" alt="">
+                        <div id="book">
+                            <a href="#">
+                                <div class="detail">
+                                    <span>상세보기</span> </div>
+                            </a>
+                            <a href="#">
+                                <div class="booking"> <span>예매하기</span> </div>
+                            </a>
+                        </div>
                         <h1>15</h1>
                     </div>
                     <h3>문맨</h3>
@@ -822,7 +1100,7 @@
 
                     <div class="event-wrapper">
                         <div class="ebox ebox04">
-                            <a href="#"><img src="./cgv_image/3000.jpeg" alt=""></a>
+                            <a href="#"><img src="./cgv_image/cgvplus.jpg" alt=""></a>
                         </div>
                         <a href="#"><h4>[3000년의 기다림]필름마크</h4></a>
                         <a href="#"><h5>2022.12.02~2032.12.02</h5></a>
@@ -830,7 +1108,7 @@
 
                     <div class="event-wrapper">
                         <div class="ebox ebox05">
-                            <a href="#"><img src="./cgv_image/switch.jpeg" alt=""></a>
+                            <a href="#"><img src="./cgv_image/sale.jpg" alt=""></a>
                         </div>
                         <a href="#"><h4>[스위치]필름마크</h4></a>
                         <a href="#"><h5>2022.12.02~2032.12.02</h5></a>
@@ -993,24 +1271,26 @@
 
     
     <script>
+       
 
-        var menu = $(".menu>ul>li");
-        var submenu = $(".sub-wrap");
+       var menu = $(".menu>ul>li");
+        var submenu = $(".submenu");
 
         menu.mouseover(function(){
-            submenu.stop().slideDown(300);
-            
+            submenu.stop().slideDown();
+    
         })
 
         menu.mouseout(function(){
-            submenu.stop().slideUp(300);
-            menu.removeClass(submenu);
+            submenu.stop().slideUp();
+            
         })
 
-        
 
         
     </script>
+
+
 
 
     <script>
@@ -1032,6 +1312,11 @@
                 $(".gnb>li>a").css({
                     'color':'white'
                 })
+
+                $(".search").css({
+                    'position':'fixed',
+                    'top':0
+                })
                 
                 
             }
@@ -1039,13 +1324,22 @@
                 $(".gnb").css("position","static");
                 $(".gnb").css({
                     'background-image':'none',
-                    'border-bottom' : '1px solid red'
+                    'border-bottom' : '2px solid red'
                 })
                 $(".gnb>li>a").css({
                     'color':'black'
                 })
                 $(".gnb>li:nth-child(3)>a").css({
                     'color':'#fb4357'
+                })
+
+                $(".search").css({
+                    'position':'absolute',
+                    'top': '120px'
+                    
+                    
+                      
+                    
                 })
                 
             }
@@ -1084,6 +1378,8 @@
 
         const button4 = document.querySelector("#button4");
         const button5 = document.querySelector("#button5");
+
+        const button1 = document.querySelector('#button1');
         
 
         
@@ -1105,8 +1401,8 @@
             console.log(num);
             console.log(x);
             
+            move2();
             
-
         
         })
 
@@ -1114,6 +1410,8 @@
         
         
         button5.addEventListener("click",function(){
+
+        
 
             if( 0 < num ){
                 num = num -1;
@@ -1125,10 +1423,27 @@
                 chartBox.style.transform = 'translate(' + 0 + 'px)';
             }
             
-            
+            move2();
             console.log(num);
             console.log(x);
         })
+
+
+        const move2 = function(){
+
+            if(num == 2){
+                button4.style.display = 'none';
+                button5.style.display = 'inline-block';
+            }else if(num == 1) {
+                button5.style.display = 'inline-block';
+                button4.style.display = 'inline-block';
+
+
+            }else {
+                button4.style.display = 'inline-block';
+                button5.style.display = 'none';
+            }
+        }
 
    
       
@@ -1141,41 +1456,116 @@
         const eWid = event.getBoundingClientRect().width;
         const cWid = chart.getBoundingClientRect().width;
 
-        let y = -eWid;
+        
+  
+        let timer= setInterval(()=>{
+        move();
+       }, 4000);
+
+  
+        
+       
 
         button2.addEventListener('click',function(){
 
-
-            eventBox.style.transform = 'translate('+ y +'px)';
-
-            
-            button2.style.opacity = "0";
-
-            button3.style.opacity = "0.8";
-            
-
             
             
+            clearInterval(timer); 
+          
+            move();
 
+           timer = setInterval(() => {
+                move();
+             }, 4000);
+
+           
+           
         })
 
+
+         
+      
+         
+
+    
+
+        
+
+         
+
+        
+       
+
+
+        const move = function(){
+
+            
+            if(eventBox.style.transform == 'translate('+ 0 +'px)'){
+
+             let y = -eWid;
+
+             eventBox.style.transform = 'translate('+ y +'px)';
+
+            button2.style.display='none';
+
+            button3.style.display ='inline-block';
+
+            
+            }
+            else{
+                eventBox.style.transform = 'translate('+ 0 +'px)';
+                 button2.style.display='inline-block';
+                 button3.style.display ='none';
+            }
+
+
+
+
+        }
+
+
+       
+
+       
+        
+        
+        
         
 
         button3.addEventListener('click', function(){
 
-            button2.style.opacity="0.8";
-            button3.style.opacity="0";
-            
-            let z = 0;
+            move(); 
 
-            eventBox.style.transform = 'translate(' + z + 'px)';
+            clearInterval(timer);
+            timer = setInterval(() => {
+                move();
+            }, 4000);
+
+           
+
+            //button2.style.opacity="0.8";
+            //button3.style.opacity="0";
+            
+            //let z = 0;
+
+            //eventBox.style.transform = 'translate(' + z + 'px)';
             
         })
 
 
+        button1.addEventListener('click', function(){
+            console.log("stop");
+            clearInterval(timer);
+            
+
+            
+        })
+
+       
 
 
     </script>
+
 
      
      
